@@ -403,7 +403,8 @@
             if (options.totalItems > 0) {
               return options.paginationCurrentPage >= $scope.paginationApi.getTotalPages();
             } else {
-              return options.data.length < 1;
+              //return options.data.length < 1;
+              return true;
             }
           };
 
